@@ -90,11 +90,11 @@ pdfView.fromAsset(String)
     .onPageError(onPageErrorListener)
     .onRender(onRenderListener) // called after document is rendered for the first time
     // called on single tap, return true if handled, false to toggle scroll handle visibility
-    .onTap(onTapListener)
-    .onLongPress(onLongPressListener)
+    .onTap(onTapListener) //triggered we tapped on PdfView
+    .onLongPress(onLongPressListener) //on long press
     .enableAnnotationRendering(false) // render annotations (such as comments, colors or forms)
     .password(null)  //if have password protected pdf then use password and pass password in string format
-    .scrollHandle(null) 
+    .scrollHandle(null) //if not set then DefaultScrollHandle() will be set
     .enableAntialiasing(true) // improve rendering a little bit on low-res screens
     // spacing between pages in dp. To define spacing color, set view background
     .spacing(0)
