@@ -78,7 +78,7 @@ or
 pdfView.fromAsset(String)
     .pages(0, 2, 1, 3, 3, 3) // all pages are displayed by default
     .enableSwipe(true) // allows to block changing pages using swipe
-    .swipeHorizontal(false)
+    .swipeHorizontal(false) // false enable vertical browsing and true enables horizontal
     .enableDoubletap(true)
     .defaultPage(0)
     // allows to draw something on the current page, usually visible in the middle of the screen
@@ -95,8 +95,8 @@ pdfView.fromAsset(String)
     .onTap(onTapListener)
     .onLongPress(onLongPressListener)
     .enableAnnotationRendering(false) // render annotations (such as comments, colors or forms)
-    .password(null)
-    .scrollHandle(null)
+    .password(null)  //if have password protected pdf then use password and pass password in string format
+    .scrollHandle(null) 
     .enableAntialiasing(true) // improve rendering a little bit on low-res screens
     // spacing between pages in dp. To define spacing color, set view background
     .spacing(0)
